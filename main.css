@@ -1,82 +1,134 @@
+
+
 body {
+  display: flex;
   min-height: 100vh;
-  /*display: flex;
   align-items: center;
-  justify-content: center;*/
-  background: #000000;
-  background: -webkit-linear-gradient(to bottom, #434343, #000000);
-  background: linear-gradient(to bottom, #434343, #000000);
-  color: white !important;
+  justify-content: center;
 }
 
-h1, h2, h3 {
-  color: white !important;
-}
-
-.AAA { display: none;}
-
-.img-fluid {
-  border-radius: 1rem;
-  border: 1px solid rgba(60,60,60,1);
-  cursor: pointer;
-}
-
-input {
-  text-align: center !important;
-  text-align-last: center !important;
-  font-size: 1.75rem !important;
-}
-
-.HHH {
-  min-height: 40vh;
+.GIFTCARD {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(BG.jpg) center/cover no-repeat;
-  color: black !important;
-  border-bottom: 8px solid #121212;
 }
 
-.display-1, .display-2 {
-  color: white !important;
-  font-weight: 400 !important;
-  text-shadow: black 0px 0px 10px;
+#VBU { display: none; }
+
+.STEP1 { display: none; }
+
+.CG {
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 1px rgba(255,255,255, 0.75) solid;
 }
 
-.DM40 { width: 40% !important; }
-.DM50 { width: 50% !important; }
-.DM60 { width: 60% !important; }
-.DM70 { width: 70% !important; }
+.HUGE { font-size: 1.5rem; }
+.HUGE strong { font-size: 1.65rem; }
 
-@media (max-width: 991.98px) {
+.BIG { font-size: 1.35rem; }
+.BIG strong { font-size: 1.45rem; }
 
-  .DM40 { width: 60% !important; }
-  .DM50 { width: 70% !important; }
-  .DM60 { width: 80% !important; }
-  .DM70 { width: 90% !important; }
+.MEDIUM { font-size: 1.15rem; }
+.MEDIUM strong { font-size: 1.25rem; }
 
-  .display-1, .display-2 {
-    color: white !important;
-    font-weight: 400 !important;
-    text-shadow: black 0px 0px 5px;
-  }
+.SMALL { font-size: 1rem; }
+.SMALL strong { font-size: 1.1rem; }
 
-  input {
-    text-align: center !important;
-    text-align-last: center !important;
-    font-size: 1.45rem !important;
-  }
+input {
+  text-align: center !important;
+}
 
-  .HHH {
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(BG.jpg) center/cover no-repeat;
-    color: black !important;
-    border-bottom: 4px solid #121212;
-  }
+p {
+  text-align-last: center !important;
+}
 
+.w-35 {
+  width: 35% !important;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+}
+
+.FLICKKK1 {
+  padding-bottom: 11.5%;
+  height: 0;
+  position: relative;
+  width: 40%;
+}
+
+.FLICKKK2 {
+  width: 30%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  mask-image: url(CLIP.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: top;
+  -webkit-mask-image: url(CLIP.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+}
+
+button, input { z-index: 1337 !important; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .UHH { max-width: 75% !important; max-height: 90vh !important; }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .UHH { max-width: 60% !important; max-height: 90vh !important;}
  }
+
+ @media (min-width: 992px) {
+   .UHH { max-width: 45% !important; max-height: 90vh !important;}
+  }
+
+  @media (min-width: 768px) {
+
+    h6 { font-size: 1.25rem !important;}
+
+    h5 { font-size: 1.5rem !important; }
+
+    h4 { font-size: 1.75rem !important; }
+
+    h3 { font-size: 2rem !important; }
+
+    h2 { font-size: 2.25rem !important; }
+
+    h1 { font-size: 2.75rem !important; }
+
+    .m-1 { margin: 0.75rem !important; }
+    .m-2 { margin: 1.25rem !important; }
+    .m-3 { margin: 1.5rem !important; }
+    .m-4 { margin: 1.75rem !important; }
+
+    .p-1 { padding: 0.75rem !important; }
+    .p-2 { padding: 1.25rem !important; }
+    .p-3 { padding: 1.5rem !important; }
+    .p-4 { padding: 1.75rem !important; }
+
+    .HUGE { font-size: 1.7rem; }
+    .HUGE strong { font-size: 1.8rem; }
+
+    .BIG { font-size: 1.6rem; }
+    .BIG strong { font-size: 1.75rem; }
+
+    .MEDIUM { font-size: 1.4rem; }
+    .MEDIUM strong { font-size: 1.55rem; }
+
+    .SMALL { font-size: 1.25rem; }
+    .SMALL strong { font-size: 1.4rem; }
+
+   }
